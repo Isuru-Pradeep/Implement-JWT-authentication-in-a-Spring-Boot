@@ -1,7 +1,9 @@
 package com.paymedia.jwt_authentication.controller;
 
+import com.paymedia.jwt_authentication.dto.InsuranceDTO;
 import com.paymedia.jwt_authentication.dto.VehicleDTO;
 import com.paymedia.jwt_authentication.dto.VehicleResponseDTO;
+import com.paymedia.jwt_authentication.service.InsuranceWebClientService;
 import com.paymedia.jwt_authentication.service.VehicleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -15,6 +17,9 @@ import java.util.List;
 public class VehicleController {
     @Autowired
     VehicleService vehicleService;
+
+    @Autowired
+    InsuranceWebClientService insuranceClientService;
 
     @PostMapping
     public ResponseEntity<VehicleResponseDTO> createVehicle(@RequestBody VehicleDTO vehicleDTO) {
@@ -46,5 +51,12 @@ public class VehicleController {
     public ResponseEntity<Void> deleteVehicle(@PathVariable Long id) {
         vehicleService.deleteVehicle(id);
         return ResponseEntity.noContent().build();
+    }
+
+    @PostMapping("/register-insurance")
+    public ResponseEntity<InsuranceDTO> registerInsurance(@RequestBody InsuranceDTO insuranceDTO) {
+        System.out.println("called register controller");
+        InsuranceDTO response = insuranceClientService.createInsurance(insuranceDTO);
+        return ResponseEntity.ok(response);
     }
 }
