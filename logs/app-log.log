@@ -1,0 +1,168 @@
+2025-05-15T17:53:45.180+05:30  INFO 1548 --- [jwt-authentication] [main] c.p.j.JwtAuthenticationApplication       : Starting JwtAuthenticationApplication using Java 24.0.1 with PID 1548 (E:\Paymedia\5_8_2025\jwt-authentication\target\classes started by prade in E:\Paymedia\5_8_2025\jwt-authentication)
+2025-05-15T17:53:45.191+05:30  INFO 1548 --- [jwt-authentication] [main] c.p.j.JwtAuthenticationApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-05-15T17:53:46.216+05:30  INFO 1548 --- [jwt-authentication] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-15T17:53:46.468+05:30  INFO 1548 --- [jwt-authentication] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 230 ms. Found 3 JPA repository interfaces.
+2025-05-15T17:53:47.253+05:30  INFO 1548 --- [jwt-authentication] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-15T17:53:47.267+05:30  INFO 1548 --- [jwt-authentication] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-15T17:53:47.267+05:30  INFO 1548 --- [jwt-authentication] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-15T17:53:47.334+05:30  INFO 1548 --- [jwt-authentication] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-15T17:53:47.335+05:30  INFO 1548 --- [jwt-authentication] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2075 ms
+2025-05-15T17:53:47.528+05:30  INFO 1548 --- [jwt-authentication] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-15T17:53:47.601+05:30  INFO 1548 --- [jwt-authentication] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-15T17:53:47.646+05:30  INFO 1548 --- [jwt-authentication] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-15T17:53:48.031+05:30  INFO 1548 --- [jwt-authentication] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-15T17:53:48.071+05:30  INFO 1548 --- [jwt-authentication] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-15T17:53:48.310+05:30  INFO 1548 --- [jwt-authentication] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4a833595
+2025-05-15T17:53:48.312+05:30  INFO 1548 --- [jwt-authentication] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-15T17:53:48.405+05:30  INFO 1548 --- [jwt-authentication] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-15T17:53:49.256+05:30  INFO 1548 --- [jwt-authentication] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-15T17:53:49.388+05:30  INFO 1548 --- [jwt-authentication] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-15T17:53:50.021+05:30  INFO 1548 --- [jwt-authentication] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-05-15T17:53:50.022+05:30  WARN 1548 --- [jwt-authentication] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-05-15T17:53:50.777+05:30  INFO 1548 --- [jwt-authentication] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-15T17:53:50.787+05:30  INFO 1548 --- [jwt-authentication] [main] c.p.j.JwtAuthenticationApplication       : Started JwtAuthenticationApplication in 6.311 seconds (process running for 6.863)
+2025-05-15T17:56:58.455+05:30  INFO 1548 --- [jwt-authentication] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-15T17:56:58.510+05:30  INFO 1548 --- [jwt-authentication] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-15T17:56:58.535+05:30  INFO 1548 --- [jwt-authentication] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-15T17:56:58.539+05:30  INFO 1548 --- [jwt-authentication] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-15T17:56:58.552+05:30  INFO 1548 --- [jwt-authentication] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-15T17:57:04.801+05:30  INFO 15640 --- [jwt-authentication] [main] c.p.j.JwtAuthenticationApplication       : Starting JwtAuthenticationApplication using Java 24.0.1 with PID 15640 (E:\Paymedia\5_8_2025\jwt-authentication\target\classes started by prade in E:\Paymedia\5_8_2025\jwt-authentication)
+2025-05-15T17:57:04.805+05:30  INFO 15640 --- [jwt-authentication] [main] c.p.j.JwtAuthenticationApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-05-15T17:57:06.329+05:30  INFO 15640 --- [jwt-authentication] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-15T17:57:06.579+05:30  INFO 15640 --- [jwt-authentication] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 231 ms. Found 3 JPA repository interfaces.
+2025-05-15T17:57:07.788+05:30  INFO 15640 --- [jwt-authentication] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-15T17:57:07.813+05:30  INFO 15640 --- [jwt-authentication] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-15T17:57:07.813+05:30  INFO 15640 --- [jwt-authentication] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-15T17:57:07.923+05:30  INFO 15640 --- [jwt-authentication] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-15T17:57:07.923+05:30  INFO 15640 --- [jwt-authentication] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3027 ms
+2025-05-15T17:57:08.258+05:30  INFO 15640 --- [jwt-authentication] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-15T17:57:08.371+05:30  INFO 15640 --- [jwt-authentication] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-15T17:57:08.463+05:30  INFO 15640 --- [jwt-authentication] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-15T17:57:08.985+05:30  INFO 15640 --- [jwt-authentication] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-15T17:57:09.174+05:30  INFO 15640 --- [jwt-authentication] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-15T17:57:09.813+05:30  INFO 15640 --- [jwt-authentication] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6f8ac8d5
+2025-05-15T17:57:09.815+05:30  INFO 15640 --- [jwt-authentication] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-15T17:57:10.169+05:30  INFO 15640 --- [jwt-authentication] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-15T17:57:11.308+05:30  INFO 15640 --- [jwt-authentication] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-15T17:57:11.467+05:30  INFO 15640 --- [jwt-authentication] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-15T17:57:12.456+05:30  INFO 15640 --- [jwt-authentication] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-05-15T17:57:12.457+05:30  WARN 15640 --- [jwt-authentication] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-05-15T17:57:13.636+05:30  INFO 15640 --- [jwt-authentication] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-15T17:57:13.648+05:30  INFO 15640 --- [jwt-authentication] [main] c.p.j.JwtAuthenticationApplication       : Started JwtAuthenticationApplication in 9.867 seconds (process running for 10.735)
+2025-05-15T17:57:21.714+05:30  INFO 15640 --- [jwt-authentication] [http-nio-8080-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-15T17:57:21.715+05:30  INFO 15640 --- [jwt-authentication] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-15T17:57:21.717+05:30  INFO 15640 --- [jwt-authentication] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-05-15T17:57:22.035+05:30  INFO 15640 --- [jwt-authentication] [http-nio-8080-exec-5] c.p.j.f.RequestResponseLoggingFilter     : [Request] GET /api/vehicles
+2025-05-15T17:57:22.035+05:30  INFO 15640 --- [jwt-authentication] [http-nio-8080-exec-5] c.p.j.f.RequestResponseLoggingFilter     : Headers:
+2025-05-15T17:57:22.035+05:30  INFO 15640 --- [jwt-authentication] [http-nio-8080-exec-5] c.p.j.f.RequestResponseLoggingFilter     : 📍 Client IP: 0:0:0:0:0:0:0:1
+2025-05-15T17:57:22.037+05:30  INFO 15640 --- [jwt-authentication] [http-nio-8080-exec-5] c.p.j.f.RequestResponseLoggingFilter     :    • authorization: [PROTECTED]
+2025-05-15T17:57:22.038+05:30  INFO 15640 --- [jwt-authentication] [http-nio-8080-exec-5] c.p.j.f.RequestResponseLoggingFilter     :    • user-agent: PostmanRuntime/7.43.4
+2025-05-15T17:57:22.039+05:30  INFO 15640 --- [jwt-authentication] [http-nio-8080-exec-5] c.p.j.f.RequestResponseLoggingFilter     :    • accept: */*
+2025-05-15T17:57:22.040+05:30  INFO 15640 --- [jwt-authentication] [http-nio-8080-exec-5] c.p.j.f.RequestResponseLoggingFilter     :    • postman-token: 89b0b930-457b-4e58-919f-6a9645747e92
+2025-05-15T17:57:22.040+05:30  INFO 15640 --- [jwt-authentication] [http-nio-8080-exec-5] c.p.j.f.RequestResponseLoggingFilter     :    • host: localhost:8080
+2025-05-15T17:57:22.040+05:30  INFO 15640 --- [jwt-authentication] [http-nio-8080-exec-5] c.p.j.f.RequestResponseLoggingFilter     :    • accept-encoding: gzip, deflate, br
+2025-05-15T17:57:22.040+05:30  INFO 15640 --- [jwt-authentication] [http-nio-8080-exec-5] c.p.j.f.RequestResponseLoggingFilter     :    • connection: keep-alive
+2025-05-15T17:57:22.146+05:30  INFO 15640 --- [jwt-authentication] [http-nio-8080-exec-5] c.p.j.f.RequestResponseLoggingFilter     : ⬅️ [Response] GET /api/vehicles | Status: 200 | Time: 110 ms
+2025-05-15T18:08:32.409+05:30  INFO 15640 --- [jwt-authentication] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-15T18:08:32.459+05:30  INFO 15640 --- [jwt-authentication] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-15T18:08:32.490+05:30  INFO 15640 --- [jwt-authentication] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-15T18:08:32.495+05:30  INFO 15640 --- [jwt-authentication] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-15T18:08:32.508+05:30  INFO 15640 --- [jwt-authentication] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-15T18:10:15.232+05:30  INFO 12040 --- [jwt-authentication] [main] c.p.j.JwtAuthenticationApplication       : Starting JwtAuthenticationApplication using Java 24.0.1 with PID 12040 (E:\Paymedia\5_8_2025\jwt-authentication\target\classes started by prade in E:\Paymedia\5_8_2025\jwt-authentication)
+2025-05-15T18:10:15.236+05:30  INFO 12040 --- [jwt-authentication] [main] c.p.j.JwtAuthenticationApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-05-15T18:10:16.238+05:30  INFO 12040 --- [jwt-authentication] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-15T18:10:16.411+05:30  INFO 12040 --- [jwt-authentication] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 157 ms. Found 3 JPA repository interfaces.
+2025-05-15T18:10:17.207+05:30  INFO 12040 --- [jwt-authentication] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-15T18:10:17.225+05:30  INFO 12040 --- [jwt-authentication] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-15T18:10:17.225+05:30  INFO 12040 --- [jwt-authentication] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-15T18:10:17.301+05:30  INFO 12040 --- [jwt-authentication] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-15T18:10:17.301+05:30  INFO 12040 --- [jwt-authentication] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2000 ms
+2025-05-15T18:10:17.494+05:30  INFO 12040 --- [jwt-authentication] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-15T18:10:17.562+05:30  INFO 12040 --- [jwt-authentication] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-15T18:10:17.615+05:30  INFO 12040 --- [jwt-authentication] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-15T18:10:17.977+05:30  INFO 12040 --- [jwt-authentication] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-15T18:10:18.014+05:30  INFO 12040 --- [jwt-authentication] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-15T18:10:18.256+05:30  INFO 12040 --- [jwt-authentication] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7ce30c0b
+2025-05-15T18:10:18.258+05:30  INFO 12040 --- [jwt-authentication] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-15T18:10:18.361+05:30  INFO 12040 --- [jwt-authentication] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-15T18:10:19.284+05:30  INFO 12040 --- [jwt-authentication] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-15T18:10:19.326+05:30  INFO 12040 --- [jwt-authentication] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-15T18:10:20.040+05:30  INFO 12040 --- [jwt-authentication] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-05-15T18:10:20.041+05:30  WARN 12040 --- [jwt-authentication] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-05-15T18:10:21.045+05:30  INFO 12040 --- [jwt-authentication] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-15T18:10:21.061+05:30  INFO 12040 --- [jwt-authentication] [main] c.p.j.JwtAuthenticationApplication       : Started JwtAuthenticationApplication in 6.523 seconds (process running for 7.064)
+2025-05-15T18:12:54.095+05:30  INFO 12040 --- [jwt-authentication] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-15T18:12:54.140+05:30  INFO 12040 --- [jwt-authentication] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-15T18:12:54.162+05:30  INFO 12040 --- [jwt-authentication] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-15T18:12:54.165+05:30  INFO 12040 --- [jwt-authentication] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-15T18:12:54.175+05:30  INFO 12040 --- [jwt-authentication] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-15T18:18:20.261+05:30  INFO 2472 --- [jwt-authentication] [main] c.p.j.JwtAuthenticationApplication       : Starting JwtAuthenticationApplication using Java 24.0.1 with PID 2472 (E:\Paymedia\5_8_2025\jwt-authentication\target\classes started by prade in E:\Paymedia\5_8_2025\jwt-authentication)
+2025-05-15T18:18:20.265+05:30  INFO 2472 --- [jwt-authentication] [main] c.p.j.JwtAuthenticationApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-05-15T18:18:21.197+05:30  INFO 2472 --- [jwt-authentication] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-15T18:18:21.375+05:30  INFO 2472 --- [jwt-authentication] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 165 ms. Found 3 JPA repository interfaces.
+2025-05-15T18:18:22.188+05:30  INFO 2472 --- [jwt-authentication] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-15T18:18:22.204+05:30  INFO 2472 --- [jwt-authentication] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-15T18:18:22.204+05:30  INFO 2472 --- [jwt-authentication] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-15T18:18:22.277+05:30  INFO 2472 --- [jwt-authentication] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-15T18:18:22.278+05:30  INFO 2472 --- [jwt-authentication] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1947 ms
+2025-05-15T18:18:22.479+05:30  INFO 2472 --- [jwt-authentication] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-15T18:18:22.546+05:30  INFO 2472 --- [jwt-authentication] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-15T18:18:22.599+05:30  INFO 2472 --- [jwt-authentication] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-15T18:18:22.950+05:30  INFO 2472 --- [jwt-authentication] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-15T18:18:22.989+05:30  INFO 2472 --- [jwt-authentication] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-15T18:18:23.222+05:30  INFO 2472 --- [jwt-authentication] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7019d619
+2025-05-15T18:18:23.226+05:30  INFO 2472 --- [jwt-authentication] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-15T18:18:23.314+05:30  INFO 2472 --- [jwt-authentication] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-15T18:18:24.177+05:30  INFO 2472 --- [jwt-authentication] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-15T18:18:24.284+05:30  INFO 2472 --- [jwt-authentication] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-15T18:18:24.931+05:30  INFO 2472 --- [jwt-authentication] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-05-15T18:18:24.932+05:30  WARN 2472 --- [jwt-authentication] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-05-15T18:18:25.699+05:30  INFO 2472 --- [jwt-authentication] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-15T18:18:25.709+05:30  INFO 2472 --- [jwt-authentication] [main] c.p.j.JwtAuthenticationApplication       : Started JwtAuthenticationApplication in 6.165 seconds (process running for 6.695)
+2025-05-15T18:18:30.103+05:30  INFO 2472 --- [jwt-authentication] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-15T18:18:30.103+05:30  INFO 2472 --- [jwt-authentication] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-15T18:18:30.105+05:30  INFO 2472 --- [jwt-authentication] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-05-15T18:18:48.668+05:30  INFO 2472 --- [jwt-authentication] [http-nio-8080-exec-3] c.p.j.f.RequestResponseLoggingFilter     : [Request] GET /api/vehicles
+2025-05-15T18:18:48.668+05:30  INFO 2472 --- [jwt-authentication] [http-nio-8080-exec-3] c.p.j.f.RequestResponseLoggingFilter     : Headers:
+2025-05-15T18:18:48.668+05:30  INFO 2472 --- [jwt-authentication] [http-nio-8080-exec-3] c.p.j.f.RequestResponseLoggingFilter     : Client IP: 0:0:0:0:0:0:0:1
+2025-05-15T18:18:48.670+05:30  INFO 2472 --- [jwt-authentication] [http-nio-8080-exec-3] c.p.j.f.RequestResponseLoggingFilter     :    • authorization: [PROTECTED]
+2025-05-15T18:18:48.670+05:30  INFO 2472 --- [jwt-authentication] [http-nio-8080-exec-3] c.p.j.f.RequestResponseLoggingFilter     :    • user-agent: PostmanRuntime/7.43.4
+2025-05-15T18:18:48.670+05:30  INFO 2472 --- [jwt-authentication] [http-nio-8080-exec-3] c.p.j.f.RequestResponseLoggingFilter     :    • accept: */*
+2025-05-15T18:18:48.670+05:30  INFO 2472 --- [jwt-authentication] [http-nio-8080-exec-3] c.p.j.f.RequestResponseLoggingFilter     :    • postman-token: 4780dedf-4874-4fb4-b06a-115cc0fd4121
+2025-05-15T18:18:48.671+05:30  INFO 2472 --- [jwt-authentication] [http-nio-8080-exec-3] c.p.j.f.RequestResponseLoggingFilter     :    • host: localhost:8080
+2025-05-15T18:18:48.671+05:30  INFO 2472 --- [jwt-authentication] [http-nio-8080-exec-3] c.p.j.f.RequestResponseLoggingFilter     :    • accept-encoding: gzip, deflate, br
+2025-05-15T18:18:48.671+05:30  INFO 2472 --- [jwt-authentication] [http-nio-8080-exec-3] c.p.j.f.RequestResponseLoggingFilter     :    • connection: keep-alive
+2025-05-15T18:18:48.733+05:30  INFO 2472 --- [jwt-authentication] [http-nio-8080-exec-3] c.p.j.f.RequestResponseLoggingFilter     : ⬅️ [Response] GET /api/vehicles | Status: 200 | Time: 63 ms
+2025-05-15T18:19:04.286+05:30  INFO 2472 --- [jwt-authentication] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-15T18:19:04.337+05:30  INFO 2472 --- [jwt-authentication] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-15T18:19:04.357+05:30  INFO 2472 --- [jwt-authentication] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-15T18:19:04.359+05:30  INFO 2472 --- [jwt-authentication] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-15T18:19:04.367+05:30  INFO 2472 --- [jwt-authentication] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
