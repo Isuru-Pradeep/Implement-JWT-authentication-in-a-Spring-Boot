@@ -8,6 +8,7 @@ import com.paymedia.jwt_authentication.service.VehicleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -22,24 +23,26 @@ public class VehicleController {
     InsuranceWebClientService insuranceClientService;
 
     @PostMapping
+    @PreAuthorize("hasRole('OFFICER')")
     public ResponseEntity<VehicleResponseDTO> createVehicle(@RequestBody VehicleDTO vehicleDTO) {
         VehicleResponseDTO responseDTO = vehicleService.createVehicle(vehicleDTO);
         return new ResponseEntity<>(responseDTO, HttpStatus.CREATED);
     }
-
     @GetMapping
+    @PreAuthorize("hasRole('USER') or hasRole('OFFICER')")
     public ResponseEntity<List<VehicleResponseDTO>> getAllVehicles() {
         List<VehicleResponseDTO> vehicles = vehicleService.getAllVehicles();
         return ResponseEntity.ok(vehicles);
     }
 
     @GetMapping("/{id}")
+    @PreAuthorize("hasRole('USER') or hasRole('OFFICER')")
     public ResponseEntity<VehicleResponseDTO> getVehicleById(@PathVariable Long id) {
         VehicleResponseDTO responseDTO = vehicleService.getVehicleById(id);
         return ResponseEntity.ok(responseDTO);
     }
-
     @PutMapping("/{id}")
+    @PreAuthorize("hasAuthority('MANAGE')")
     public ResponseEntity<VehicleResponseDTO> updateVehicle(
             @PathVariable Long id,@RequestBody VehicleDTO vehicleDTO) {
         VehicleResponseDTO responseDTO = vehicleService.updateVehicle(id, vehicleDTO);

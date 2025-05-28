@@ -1,6 +1,6 @@
 package com.paymedia.jwt_authentication.service;
 
-import com.paymedia.jwt_authentication.entity.User;
+import com.paymedia.jwt_authentication.entity.user.User;
 import com.paymedia.jwt_authentication.repository.UserRepository;
 import org.springframework.stereotype.Service;
 

@@ -4,12 +4,15 @@ package com.paymedia.jwt_authentication.service;
 
 import com.paymedia.jwt_authentication.dto.LoginUserDto;
 import com.paymedia.jwt_authentication.dto.RegisterUserDto;
-import com.paymedia.jwt_authentication.entity.User;
+import com.paymedia.jwt_authentication.entity.user.User;
 import com.paymedia.jwt_authentication.repository.UserRepository;
+import org.jetbrains.annotations.NotNull;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+
+import java.util.Set;
 
 @Service
 public class AuthenticationService {
@@ -29,11 +32,12 @@ public class AuthenticationService {
         this.passwordEncoder = passwordEncoder;
     }
 
-    public User signup(RegisterUserDto input) {
+    public User signup(User input) {
         User user = new User();
         user.setFullName(input.getFullName());
         user.setEmail(input.getEmail());
         user.setPassword(passwordEncoder.encode(input.getPassword()));
+        user.setRoles(input.getRoles());
 
         return userRepository.save(user);
     }

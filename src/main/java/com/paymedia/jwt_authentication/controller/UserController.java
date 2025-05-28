@@ -1,6 +1,6 @@
 package com.paymedia.jwt_authentication.controller;
 
-import com.paymedia.jwt_authentication.entity.User;
+import com.paymedia.jwt_authentication.entity.user.User;
 import com.paymedia.jwt_authentication.service.UserService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
