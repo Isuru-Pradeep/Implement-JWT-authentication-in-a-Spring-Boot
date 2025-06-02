@@ -58,6 +58,18 @@ public class AuthenticationController {
         User registeredUser = authenticationService.signup(user);
         return ResponseEntity.ok(registeredUser);
     }
+    @PostMapping("/signup/testuser")
+    public ResponseEntity<User> TesterRegister(@RequestBody RegisterUserDto registerUserDto) {
+        Role role = roleRepository.findByRoleName("TEST");
+        User user = new User();
+        user.setEmail(registerUserDto.getEmail());
+        user.setPassword(registerUserDto.getPassword());
+        user.setRoles(Set.of(role));
+        user.setFullName(registerUserDto.getFullName());
+        log.info("Registering Tester: {}", user);
+        User registeredUser = authenticationService.signup(user);
+        return ResponseEntity.ok(registeredUser);
+    }
 
     @PostMapping("/login")
     public ResponseEntity<LoginResponse> authenticate(@RequestBody LoginUserDto loginUserDto) {

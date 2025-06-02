@@ -29,7 +29,7 @@ public class VehicleController {
         return new ResponseEntity<>(responseDTO, HttpStatus.CREATED);
     }
     @GetMapping
-    @PreAuthorize("hasRole('USER') or hasRole('OFFICER')")
+    @PreAuthorize("hasPermission('TEST','READ')")
     public ResponseEntity<List<VehicleResponseDTO>> getAllVehicles() {
         List<VehicleResponseDTO> vehicles = vehicleService.getAllVehicles();
         return ResponseEntity.ok(vehicles);
