@@ -38,6 +38,7 @@ public class VehicleController {
     public ResponseEntity<VehicleResponseDTO> updateVehicle(
             @PathVariable Long id,@RequestBody VehicleDTO vehicleDTO) {
         VehicleResponseDTO responseDTO = vehicleService.updateVehicle(id, vehicleDTO);
+
         return ResponseEntity.ok(responseDTO);
     }
 
