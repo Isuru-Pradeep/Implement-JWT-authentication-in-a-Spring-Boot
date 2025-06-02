@@ -1,4 +1,4 @@
-package com.paymedia.jwt_authentication.configs;
+package com.paymedia.jwt_authentication.filters;
 
 import com.paymedia.jwt_authentication.service.JwtService;
 import jakarta.servlet.FilterChain;
